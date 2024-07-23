@@ -14,13 +14,17 @@ export class Server {
 
         console.log('Server started..');
 
-        CronService.createJob('*/5 * * * * *',()=>{
-            new CheckService(
-                fileSystemlogRepository,
-                () => console.log('success'),
-                (error) => console.log(error),
-            ).execute('https://google.com');
-        });
+        //Mandar email
+
+
+
+        // CronService.createJob('*/5 * * * * *',()=>{
+        //     new CheckService(
+        //         fileSystemlogRepository,
+        //         () => console.log('success'),
+        //         (error) => console.log(error),
+        //     ).execute('https://google.com');
+        // });
 
     }
 }
